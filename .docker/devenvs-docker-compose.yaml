@@ -1,0 +1,22 @@
+services:
+  app:
+    build:
+      context: C:\Users\Administrador\Documents\Proyectos\Ejercicios\react\administrationV2
+      dockerfile: C:\Users\Administrador\Documents\Proyectos\Ejercicios\react\administrationV2\Dockerfile
+      target: development
+    container_name: app-dev-container2
+    image: app-dev-image2
+    labels:
+      com.docker.devenvironments.compose: "true"
+      com.docker.devenvironments.compose.build: "true"
+      com.docker.devenvironments.name: administrationV2-blissful_jackson
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 3000
+      published: 3000
+      protocol: tcp
+networks:
+  default:
+    name: administrationv2-blissful_jackson_default

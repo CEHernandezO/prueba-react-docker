@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  app:
+    container_name: app-dev-container2
+    image: app-dev-image2
+    build: 
+      context: .
+      target: development
+    ports:
+      - 3000:3000

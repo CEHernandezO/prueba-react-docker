@@ -13,7 +13,7 @@ function App() {
 
 	const data = {
 		nombre: "Christiam Eduardo",
-		apellidos: "Hernandez Oliver.",
+		apellidos: "Hernandez O.",
 		correo: "ing.crist@gmail.com",
 	};
 
